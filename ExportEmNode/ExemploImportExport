@@ -1,0 +1,17 @@
+//importando código em node.js
+// Suponha que você tenha um arquivo math.js que exporta uma função para calcular a soma de dois números:
+
+function soma(a, b) {
+  return a + b;
+}
+
+module.exports = soma;
+
+
+
+//exportando codigo em node.js
+// Agora, você pode importar a função soma em outro arquivo app.js usando require():
+
+const soma = require('./math');
+
+console.log(soma(2, 3)); // Saída: 5
